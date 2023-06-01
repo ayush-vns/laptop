@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Account</title>
+    <link rel="icon" type="image/x-icon" href="https://scontent.flko7-2.fna.fbcdn.net/v/t39.30808-6/279421526_1367103697144088_3574765916514511239_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7L2wzE3hqqwAX-KyeWl&_nc_ht=scontent.flko7-2.fna&oh=00_AfDwYsOoCx4mRs_V3zFjsHinPNA2PliPv2zNGMZzudZxjA&oe=6473BA31">
+    <style>
+        td{
+        background-color:silver;
+        font-size:50px;
+        }
+         a{
+            font-size: 30px;
+        }
+         input{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <center>
+<table border="3">
+    <tr><td colspan="2">Open Bank Account</td></tr>
+    <tr><td colspan="2">{{result}}</td></tr>
+<tr><td><label for="name">accountno:</label></td><td>
+        <input type="text" value="{{accountno}}" name="accountno" required
+        size="10"></td></tr>
+
+    <tr><td><label for="name">name:</label></td><td>
+        <input type="text" value="{{name}}" name="name" required
+        size="10"></td></tr>
+    <tr><td><label for="name">balance:</label></td><td>
+        <input type="text" value="{{balance}}" name="balance" required
+        size="10"></td></tr>
+    <tr><td><input name="cmd" type="reset" value="Clear"></td><td><input name="cmd" type="submit" value="submit"></td></tr>
+
+    <tr><td colspan="2"><a href="/laptopapp" >Back</a></td></tr>
+</table>
+
+</center>
+
+    </form>
+
+
+</body>
+</html>

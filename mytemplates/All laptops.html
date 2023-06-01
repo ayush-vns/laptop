@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all</title>
+</head>
+<body>
+<h1>Hello Laptop</h1>
+<form>
+
+     <label for="name">price:</label>
+    <input type="text" value="{{price}}" name="price" required
+           size="10"><br><br>
+    <input name="cmd" type="submit" value="submit">
+    </form>
+<br>
+<table border="1">
+    <tr>
+        <th>SNo</th>
+    <th>Company_name</th>
+        <th>Price</th>
+        <th>Ram</th>
+        <th>Rom</th>
+        <th>Model_name</th>
+    </tr>
+{% for smarty in laptops %}
+    <tr>
+          <td>
+{{smarty.sno}}
+        </td>
+        <td>
+{{smarty.Company_name}}
+        </td>
+             <td>
+{{smarty.Price}}
+        </td>
+          <td>
+{{smarty.Ram}}
+        </td>
+          <td>
+{{smarty.Rom}}
+        </td>
+          <td>
+{{smarty.Model_name}}
+        </td>
+        </tr>
+{% endfor %}
+    </table>
+</br>
+</body>
+</html>

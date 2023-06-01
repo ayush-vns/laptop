@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details</title>
+    <link rel="icon" type="image/x-icon" href="https://scontent.flko7-2.fna.fbcdn.net/v/t39.30808-6/279421526_1367103697144088_3574765916514511239_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7L2wzE3hqqwAX-KyeWl&_nc_ht=scontent.flko7-2.fna&oh=00_AfDwYsOoCx4mRs_V3zFjsHinPNA2PliPv2zNGMZzudZxjA&oe=6473BA31">
+    <style>
+         h1{
+        background-color: silver;
+        font-size: 70px;
+
+        }
+        input{
+            font-size: 20px;
+        }
+        label{
+            font-size: 20px;
+        }
+         a{
+            font-size: 30px;
+        }
+        body{
+            background-color: rosybrown;
+        }
+        td{
+        font-size:30px;
+        }
+        tr{
+        font-size:30px;
+        }
+    </style>
+</head>
+<body>
+<center>
+<form>
+
+    <label for="name">accountno:</label>
+    <input type="text" value="{{accountno}}" name="accountno" required
+           size="10"><br><br>
+    <input name="cmd" type="submit" value="submit">
+     <tr><td colspan="2"><a href="/laptopapp" >Back</a></td></tr>
+</form>
+<br>
+<table border="1">
+    <tr>
+        <th>accountno</th>
+        <th>name</th>
+        <th>balance</th>
+    </tr>
+    <tr>
+        <td>
+            {{account.accountno}}
+        </td>
+        <td>
+            {{account.name}}
+        </td>
+        <td>
+            {{account.balance}}
+        </td>
+    </tr>
+
+</table>
+</center>
+</body>

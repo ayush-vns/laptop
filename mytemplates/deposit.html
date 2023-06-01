@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>deposit</title>
+     <link rel="icon" type="image/x-icon" href="https://scontent.flko7-2.fna.fbcdn.net/v/t39.30808-6/279421526_1367103697144088_3574765916514511239_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7L2wzE3hqqwAX-KyeWl&_nc_ht=scontent.flko7-2.fna&oh=00_AfDwYsOoCx4mRs_V3zFjsHinPNA2PliPv2zNGMZzudZxjA&oe=6473BA31">
+</head>
+<style>
+     h1{
+        background-color: silver;
+        font-size: 70px;
+
+        }
+        input{
+            font-size: 30px;
+        }
+        label{
+            font-size: 30px;
+        }
+         a{
+            font-size: 30px;
+        }
+        body{
+            background-color: rosybrown;
+        }
+</style>
+<body>
+<center>
+    <h1>{{result}}</h1>
+<form>
+     <label for="name">accountno:</label>
+    <input type="text" value="{{accountno}}" name="accountno" required
+           size="10"><br><br>
+     <label for="name">amount_to_deposit:</label>
+    <input type="number" value="{{amounttodeposit}}" name="amount_deposit" required
+           size="10"><br><br>
+    <input name="cmd" type="submit" value="submit">
+    <tr><td colspan="2"><a href="/laptopapp" >Back</a></td></tr>
+    </form>
+</center>
+
+
+
+</body>
+</html>
