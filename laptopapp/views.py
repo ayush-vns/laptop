@@ -192,7 +192,7 @@ def withdraw(request):
 
 def details(request):
     accountno = ""
-    account=[]
+    account = []
     if request.GET:
         accountno = request.GET["accountno"]
         accounts = BankAccount.objects.filter(accountno=accountno)
@@ -203,3 +203,6 @@ def details(request):
         # a.accountno = accountno
         print(accounts)
     return render(request, "details.html", {"account": account, "accountno": accountno})
+
+def check(request):
+    return render(request, "check.html")
