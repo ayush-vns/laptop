@@ -70,13 +70,14 @@ def withdraw(request):
     if request.GET:
         accountno = request.GET["accountno"]
         withdraw = int(request.GET["withdraw"])
-        accounts = BankAccount.objects.filter()
+        accounts = BankAccount.objects.filter(accountno=accountno)
         if len(accounts) <= 0:
             result = "Failed"
             return render(request, "withdraw.html",
                           {"result": result, "aaccountno=accountno": accountno, "withdraw": withdraw})
         account = accounts[0]
         account.balance -= withdraw
+        print("Withdraw " + withdraw)
         account.save()
         result = "Success"
 
